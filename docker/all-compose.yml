@@ -1,0 +1,10 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2017-CU12-ubuntu
+    container_name: mssql
+    ports:
+      - 14330:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=To-jest-haslo-do-sqla-w-kontenerze-123
+      - MSSQL_PID=Express
